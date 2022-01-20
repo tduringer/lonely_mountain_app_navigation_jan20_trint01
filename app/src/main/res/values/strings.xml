@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">lonely_mountain_app_navigation_jan20_trint01</string>
+    <string name="welcome_to_lonely_mountain_app">Welcome to Lonely Mountain App</string>
+    <string name="create_account">Create Account</string>
+    <string name="ask_name">What\'s Your Name?</string>
+    <string name="enter_first_name">Enter First Name</string>
+    <string name="enter_surname">Enter Surname</string>
+    <string name="next">Next</string>
+    <string name="ask_email">And, your email?</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="back">Back</string>
+    <string name="create_a_password">Create A Password</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="well_done">Well Done!</string>
+    <string name="sign_up_complete">Sign Up Complete!</string>
+    <string name="back_to_namefragment">Back to NameFragment</string>
+</resources>

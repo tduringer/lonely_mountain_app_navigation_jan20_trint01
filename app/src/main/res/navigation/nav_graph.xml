@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/createAccountFragment">
+
+    <fragment
+        android:id="@+id/createAccountFragment"
+        android:name="com.example.lonely_mountain_app_navigation_jan20_trint01.CreateAccountFragment"
+        android:label="CreateAccountFragment" >
+        //tools:layout="@layout/fragment_create_account">
+        <action
+            android:id="@+id/action_createAccountFragment_to_nameFragment"
+            app:destination="@id/nameFragment">
+
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/nameFragment"
+        android:name="com.example.lonely_mountain_app_navigation_jan20_trint01.NameFragment"
+        android:label="NameFragment" >
+        <action
+            android:id="@+id/action_nameFragment_to_emailFragment"
+            app:destination="@id/emailFragment" >
+
+<!--            <argument-->
+<!--                android:name="firstName"-->
+<!--                app:argType="String"/>-->
+
+<!--            <argument-->
+<!--                android:name="lastName"-->
+<!--                app:argType="String"/>-->
+        </action>
+
+    </fragment>
+    <fragment
+        android:id="@+id/emailFragment"
+        android:name="com.example.lonely_mountain_app_navigation_jan20_trint01.EmailFragment"
+        android:label="EmailFragment" >
+        <action
+            android:id="@+id/action_emailFragment_to_passwordFragment"
+            app:destination="@id/passwordFragment" >
+<!--            <argument-->
+<!--                android:name="firstName"-->
+<!--                app:argType="String"/>-->
+
+<!--            <argument-->
+<!--                android:name="lastName"-->
+<!--                app:argType="String"/>-->
+
+<!--            <argument-->
+<!--                android:name="email"-->
+<!--                app:argType="String"/>-->
+
+        </action>
+        <action
+            android:id="@+id/action_emailFragment_to_nameFragment"
+            app:destination="@id/nameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/passwordFragment"
+        android:name="com.example.lonely_mountain_app_navigation_jan20_trint01.PasswordFragment"
+        android:label="PasswordFragment" >
+        <action
+            android:id="@+id/action_passwordFragment_to_signUpCompleteFragment"
+            app:destination="@id/signUpCompleteFragment" >
+
+<!--            <argument-->
+<!--                android:name="firstName"-->
+<!--                app:argType="String"/>-->
+
+<!--            <argument-->
+<!--                android:name="lastName"-->
+<!--                app:argType="String"/>-->
+
+<!--            <argument-->
+<!--                android:name="email"-->
+<!--                app:argType="String"/>-->
+
+<!--            <argument-->
+<!--                android:name="password"-->
+<!--                app:argType="String"/>-->
+
+        </action>
+
+        <action
+            android:id="@+id/action_passwordFragment_to_emailFragment"
+            app:destination="@id/emailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpCompleteFragment"
+        android:name="com.example.lonely_mountain_app_navigation_jan20_trint01.SignUpCompleteFragment"
+        android:label="SignUpCompleteFragment" >
+        <action
+            android:id="@+id/action_signUpCompleteFragment_to_nameFragment"
+            app:destination="@id/nameFragment" />
+    </fragment>
+</navigation>
