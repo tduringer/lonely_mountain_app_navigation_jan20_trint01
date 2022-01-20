@@ -8,11 +8,9 @@
         android:id="@+id/createAccountFragment"
         android:name="com.example.lonely_mountain_app_navigation_jan20_trint01.CreateAccountFragment"
         android:label="CreateAccountFragment" >
-        //tools:layout="@layout/fragment_create_account">
         <action
             android:id="@+id/action_createAccountFragment_to_nameFragment"
             app:destination="@id/nameFragment">
-
         </action>
     </fragment>
     <fragment
@@ -94,5 +92,12 @@
         <action
             android:id="@+id/action_signUpCompleteFragment_to_nameFragment"
             app:destination="@id/nameFragment" />
+        <action
+            android:id="@+id/action_signUpCompleteFragment_to_displayAllUserFragment"
+            app:destination="@id/displayAllUserFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/displayAllUserFragment"
+        android:name="com.example.lonely_mountain_app_navigation_jan20_trint01.DisplayAllUserFragment"
+        android:label="DisplayAllUserFragment" />
 </navigation>

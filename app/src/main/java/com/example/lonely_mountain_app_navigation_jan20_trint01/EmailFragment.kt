@@ -32,11 +32,11 @@ class EmailFragment : Fragment() {
 
                 //val firstName = args.firstName
 
-                val direction = EmailFragmentDirections.actionEmailFragmentToPasswordFragment(
+                val action = EmailFragmentDirections.actionEmailFragmentToPasswordFragment(
                     //args.firstName,
                     //args.surname
                 )
-                findNavController().navigate(direction)
+                findNavController().navigate(action)
             }
         }
     }

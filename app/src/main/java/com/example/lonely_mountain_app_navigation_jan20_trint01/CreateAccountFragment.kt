@@ -27,8 +27,8 @@ class CreateAccountFragment : Fragment() {
         with(binding) {
             btnCreateAccount.setOnClickListener {
 
-                val direction = CreateAccountFragmentDirections.actionCreateAccountFragmentToNameFragment()
-                findNavController().navigate(direction)
+                val action = CreateAccountFragmentDirections.actionCreateAccountFragmentToNameFragment()
+                findNavController().navigate(action)
             }
         }
     }

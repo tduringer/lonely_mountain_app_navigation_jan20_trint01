@@ -14,4 +14,5 @@
     <string name="well_done">Well Done!</string>
     <string name="sign_up_complete">Sign Up Complete!</string>
     <string name="back_to_namefragment">Back to NameFragment</string>
+    <string name="display_all_users">Display All Users</string>
 </resources>

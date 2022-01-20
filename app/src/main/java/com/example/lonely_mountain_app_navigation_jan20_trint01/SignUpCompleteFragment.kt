@@ -26,8 +26,13 @@ class SignUpCompleteFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         with(binding) {
             btnBack.setOnClickListener {
-                val directions = SignUpCompleteFragmentDirections.actionSignUpCompleteFragmentToNameFragment()
-                findNavController().navigate(directions)
+                val action = SignUpCompleteFragmentDirections.actionSignUpCompleteFragmentToNameFragment()
+                findNavController().navigate(action)
+            }
+
+            btnDisplayAllUsers.setOnClickListener {
+                val action = SignUpCompleteFragmentDirections.actionSignUpCompleteFragmentToDisplayAllUserFragment()
+                findNavController().navigate(action)
             }
         }
     }

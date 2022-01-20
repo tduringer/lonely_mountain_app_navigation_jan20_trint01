@@ -26,8 +26,8 @@ class PasswordFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         with(binding) {
             btnNext.setOnClickListener {
-                val direction = PasswordFragmentDirections.actionPasswordFragmentToSignUpCompleteFragment()
-                findNavController().navigate(direction)
+                val action = PasswordFragmentDirections.actionPasswordFragmentToSignUpCompleteFragment()
+                findNavController().navigate(action)
             }
         }
     }
